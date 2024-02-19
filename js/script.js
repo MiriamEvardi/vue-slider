@@ -8,6 +8,8 @@ createApp({
     data() {
         return {
 
+            activeIndex: 0,
+
             slides: [
                 {
                     image: 'mononoke.jpg',
@@ -41,9 +43,9 @@ createApp({
             ],
 
         }
+    },
 
-        methods: {
+    methods: {
 
-        }
     }
 }).mount("#app");
