@@ -70,6 +70,9 @@ createApp({
             this.interval = setInterval(() => { this.slideNextImage() }, 3000);
         },
 
+        autoplayBlock() {
+            clearInterval(this.interval)
+        },
 
     },
 

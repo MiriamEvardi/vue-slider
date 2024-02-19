@@ -4,17 +4,29 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../img/319911-Night-Sky-City-Stars-Anime-Scenery-4K.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .container {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.slider-wrapper {
+    box-shadow: rgba(255, 255, 255, 0.45) 0px 5px 15px;
+}
+
 .item {
     float: left;
     width: 700px;
-    height: 300px;
+    height: 400px;
     position: relative;
 }
 
@@ -26,6 +38,9 @@
 
 .item .text {
     position: absolute;
+    background-color: #00000072;
+    padding: 10px;
+    margin-left: 10px;
     right: 20px;
     bottom: 20px;
     text-align: right;
@@ -34,13 +49,13 @@
 
 .thumbs {
     float: left;
-    height: 300px;
+    height: 400px;
     background: #000;
     position: relative;
 }
 
 .thumb {
-    height: calc((300px) / 5);
+    height: calc((400px) / 5);
     opacity: 0.5;
 }
 
