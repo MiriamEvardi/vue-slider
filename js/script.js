@@ -1,25 +1,49 @@
-const slides = [
-{
-    image: 'img/01.webp',
-        title: 'Marvel\'s Spiderman Miles Morale',
-        text: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
-    }, {
-        image: 'img/02.webp',
-        title: 'Ratchet & Clank: Rift Apart',
-        text: 'Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.',
-    }, {
-        image: 'img/03.webp',
-        title: 'Fortnite',
-        text: "Grab all of your friends and drop into Epic Games Fortnite, a massive 100 - player face - off that combines looting, crafting, shootouts and chaos.",
-    }, {
-        image: 'img/04.webp',
-        title: 'Stray',
-        text: 'Lost, injured and alone, a stray cat must untangle an ancient mystery to escape a long-forgotten city',
-    }, {
-        image: 'img/05.webp',
-        title: "Marvel's Avengers",
-        text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
-    }
-];
 
-console.log(slides);
+
+
+
+const { createApp } = Vue;
+
+createApp({
+    data() {
+        return {
+
+            slides: [
+                {
+                    image: 'mononoke.jpg',
+                    title: "Princess Mononoke",
+                    text: "A young prince, seeking the fulfillment of a prophecy, encounters a girl raised by wolves and the two embark on an epic journey to save the forest from destruction."
+                },
+
+                {
+                    image: 'totoro.jpg',
+                    title: 'Totoro',
+                    text: "Two young sisters move to the countryside with their father and discover the magical creatures living in the nearby forest, including the gentle and mysterious Totoro."
+                },
+
+                {
+                    image: 'la-citta-incantata.jpg',
+                    title: 'Spirited Away',
+                    text: "A young girl finds herself trapped in a mysterious world of spirits and must navigate through an enchanted bathhouse to rescue her parents and return to the human world."
+                },
+
+                {
+                    image: 'il-castello-nel-cielo.jpg',
+                    title: 'Castle in the Sky',
+                    text: "A young boy and a girl with a mysterious crystal pendant embark on a high-flying adventure to find the legendary floating city of Laputa and uncover its secrets."
+                },
+
+                {
+                    image: 'Howl.jpg',
+                    title: "Howl's Moving Castle",
+                    text: "A young woman is transformed into an elderly woman by a curse and seeks refuge in the moving castle of the enigmatic wizard Howl, where she discovers love and the power of friendship."
+                }
+            ],
+
+        }
+
+        methods: {
+
+        }
+    }
+}).mount("#app");
