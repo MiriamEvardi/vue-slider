@@ -45,7 +45,8 @@
 
                 <div class="thumb" v-for="(activeImages, index) in slides"
                     :class=" index == activeIndex ? 'active' : ''">
-                    <img :src="'/img/' + activeImages.image">
+                    <img :src="'/img/' + activeImages.image" @click="(slideThumbs(index))">
+
                 </div>
             </div>
         </div>
