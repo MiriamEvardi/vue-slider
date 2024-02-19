@@ -20,7 +20,7 @@
 
                 <div class="item" v-for="(currentImage, index) in slides" v-show="index == activeIndex">
 
-                    <img :src="'/img/' + currentImage.image" :alt="currentImage.title">
+                    <img :src="'/img/' + currentImage.image" :alt="'Anteprima' + (index + 1)">
                     <div class="text">
                         <h2>
                             {{ currentImage.title }}
@@ -42,24 +42,15 @@
             <div class="thumbs">
                 <div @click="(slidePreviousImage())" class="prev"></div>
                 <div @click="(slideNextImage())" class=" next"></div>
-                <!--  <div class="thumb active">
-                        <img src="img/01.webp" alt="Svezia" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/02.webp" alt="Ratchet & Clank" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/03.webp" alt="Fortnite" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/04.webp" alt="Stray" />
-                    </div>
-                    <div class="thumb">
-                        <img src="img/05.webp" alt="Avengers" />
-                    </div> -->
-            </div>
 
+                <div class="thumb" v-for="(activeImages, index) in slides"
+                    :class=" index == activeIndex ? 'active' : ''">
+                    <img :src="'/img/' + activeImages.image">
+                </div>
+            </div>
         </div>
+
+    </div>
     </div>
 
     </div>
