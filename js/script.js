@@ -64,6 +64,13 @@ createApp({
 
         slideThumbs(index) {
             this.activeIndex = index;
+        },
+
+        autoplaySlide() {
+            this.timer = setInterval(function () {
+                this.slideNextImage();
+
+            }, 3000);
         }
     }
 }).mount("#app");
