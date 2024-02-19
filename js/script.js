@@ -67,10 +67,16 @@ createApp({
         },
 
         autoplaySlide() {
-            this.timer = setInterval(function () {
-                this.slideNextImage();
+            this.interval = setInterval(() => { this.slideNextImage() }, 3000);
+        },
 
-            }, 3000);
-        }
-    }
+
+    },
+
+    mounted() {
+        this.autoplaySlide();
+    },
+
+
+
 }).mount("#app");
