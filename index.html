@@ -44,9 +44,9 @@
                     <div @click="(slidePreviousImage())" class="prev"></div>
                     <div @click="(slideNextImage())" class=" next"></div>
 
-                    <div class="thumb " v-for="(activeImages, index) in slides"
+                    <div class="thumb " v-for="(activeImages, index) in slides" @click="(slideThumbs(index))"
                         :class=" index == activeIndex ? 'active' : ''">
-                        <img :src="'./img/' + activeImages.image" @click="(slideThumbs(index))">
+                        <img :src="'./img/' + activeImages.image">
 
                     </div>
                 </div>
